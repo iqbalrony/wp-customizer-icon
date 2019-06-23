@@ -1,0 +1,24 @@
+/*=================================================
+            Icon Control
+=================================================*/
+.icon_options input {
+	background-color: #fff;
+}
+.icon_options ul.customizer_icon{
+	list-style: none;
+	background: #fff;
+	border: 1px solid #ddd;
+	margin: 4px 0 0 0;
+	padding: 5px;
+	max-height: 200px;
+	overflow: auto;
+	cursor: default;
+	display: none;
+}
+.icon_options ul.customizer_icon li {
+	display: inline-block;
+	padding: 3px;
+	margin: 3px;
+	cursor: pointer;
+	font-size: 16px;
+}

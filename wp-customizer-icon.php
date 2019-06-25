@@ -1,11 +1,11 @@
 <?php
 /*
-Plugin Name: Customizer Icon
+Plugin Name: Wp Customizer Icon
 Plugin URI: https://github.com/iqbalrony/wp-customizer-icon
 Description: Customizer Icon plugin only for WordPress theme.
 Author: IqbalRony
-Version: 1.0
-Text Domain: customizer_icon
+Version: 1.0.1
+Text Domain: wp_customizer_icon
 */
 
 // Exit if accessed directly

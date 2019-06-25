@@ -14,7 +14,7 @@
 			var icon = icon_wrap.find('i');
 			//click on input show icon area
 			icon_input.on('click', function () {
-				icon_wrap.slideDown("fast");
+				icon_wrap.slideToggle("fast");
 			});
 			//type on input search icon item in icon area
 			icon_filter.on("keyup", function() {

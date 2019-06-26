@@ -33,12 +33,13 @@ function mytheme_customize_register( $wp_customize ) {
 				))
 	);
 }
-
+</pre>
+<pre>
 /**
  * Get Icon Class
  */
 $icon_cls = get_theme_mod('test_icon');
-echo '<i class="'.esc_attr( $icon_cls ).'"></i>';
+echo '&lt;i class="'.esc_attr( $icon_cls ).'"&gt;&lt;/i&gt;';
 </pre>
 <h3>Add Extra Icon Class</h3>
 <p>You can add extra CSS classes to the icon library. There is an filter hook named <code>IR_customizer_icons</code> by which you can add extra icons.</p>

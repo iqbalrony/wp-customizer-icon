@@ -10,7 +10,7 @@ function mytheme_customize_register( $wp_customize ) {
 	$wp_customize->add_section(
 			'test_section',
 			array(
-				'title' => __('Icon', 'text-domain'),
+				'title' => __('Icon', 'wp-customizer-icon'),
 				'priority' => 5,
 			)
 		);
@@ -27,7 +27,7 @@ function mytheme_customize_register( $wp_customize ) {
 				'test_icon',
 				array(
 					'type'      => 'icon',
-					'label' => __('Test Icon', 'text-domain'),
+					'label' => __('Test Icon', 'wp-customizer-icon'),
 					'section' => 'test_section',
 					'priority' => 10,
 				))

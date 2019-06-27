@@ -4,8 +4,8 @@ Plugin Name: Wp Customizer Icon
 Plugin URI: https://github.com/iqbalrony/wp-customizer-icon
 Description: Customizer Icon plugin only for WordPress theme.
 Author: IqbalRony
-Version: 1.0.1
-Text Domain: wp_customizer_icon
+Version: 1.0.2
+Text Domain: wp-customizer-icon
 */
 
 // Exit if accessed directly
@@ -31,6 +31,11 @@ if (!function_exists('IR_plugin_url')) {
 add_action('plugins_loaded', 'IR_customizer_icon');
 if (!function_exists('IR_customizer_icon') ) {
 	function IR_customizer_icon() {
+
+		/**
+		 * Text Domain Register.
+		 */
+		load_plugin_textdomain('wp-customizer-icon', false, plugin_basename(dirname(__FILE__)) . '/languages/');
 
 		/**
 		 * Add require files.

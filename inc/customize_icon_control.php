@@ -1,5 +1,5 @@
 <?php
-class IR_Customize_Icon_Control extends WP_Customize_Control {
+class WPCI_Customize_Icon_Control extends WP_Customize_Control {
 
 		/**
 		 * The type of customize control being rendered.
@@ -30,7 +30,7 @@ class IR_Customize_Icon_Control extends WP_Customize_Control {
 					<ul class="customizer_icon">
 						<input type="text" class="filter" value="" placeholder="Search icon"/>
 						<?php
-						$this->icon_array = apply_filters('IR_customizer_icons',IR_icon_css_class());
+						$this->icon_array = apply_filters('WPCI_customizer_icons',WPCI_icon_css_class());
 						$show_choices = $this->icon_array;
 						foreach ($show_choices as $key => $value) {
 							echo '<li><i class="'.$value.'"></i></li>';
@@ -41,4 +41,4 @@ class IR_Customize_Icon_Control extends WP_Customize_Control {
 			</label>
 			<?php
 		}
-} // end Pawshop_Customize_Icon
+} // end WPCI_Customize_Icon

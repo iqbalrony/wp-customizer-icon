@@ -2,7 +2,7 @@
 /**
  * Enqueue scripts and styles.
  */
-class IR_Enqueue_Scripts {
+class WPCI_Enqueue_Scripts {
 
 	public function __construct() {
 		/**
@@ -19,7 +19,7 @@ class IR_Enqueue_Scripts {
 		/**
 		 * Load All Stylesheet
 		 */
-		wp_enqueue_style('materialdesignicons', IR_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
+		wp_enqueue_style('materialdesignicons', WPCI_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
 
 	}
 
@@ -30,17 +30,16 @@ class IR_Enqueue_Scripts {
 		/**
 		 * Load All Stylesheet
 		 */
-		wp_enqueue_style('materialdesignicons', IR_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
-		wp_enqueue_style('wp-customizer-icon-control', IR_plugin_url('/assets/css/wp-customizer-icon-control.css'), array(), null);
+		wp_enqueue_style('materialdesignicons', WPCI_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
+		wp_enqueue_style('wp-customizer-icon-control', WPCI_plugin_url('/assets/css/wp-customizer-icon-control.css'), array(), null);
 
 		/**
 		 * Load All jQuery Library
 		 */
-		wp_enqueue_script('customizer-icon-control', IR_plugin_url('/assets/js/wp-customizer-icon-control.js'), array('jquery'), '', true);
+		wp_enqueue_script('customizer-icon-control', WPCI_plugin_url('/assets/js/wp-customizer-icon-control.js'), array('jquery'), '', true);
 
 	}
 
-
 }
 
-new IR_Enqueue_Scripts();
+new WPCI_Enqueue_Scripts();

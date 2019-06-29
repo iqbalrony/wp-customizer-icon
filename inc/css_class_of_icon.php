@@ -1,6 +1,6 @@
 <?php
-function IR_icon_css_class(){
-
+function WPCI_icon_css_class(){
+	
 	return array(
 		'mdi mdi-access-point',
 		'mdi mdi-access-point-network',

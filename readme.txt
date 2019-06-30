@@ -79,3 +79,10 @@ function push_icon($icon_array){
 = Is there way to add extra icon library  =
 
 Yes, there is an filter hook named WPCI_customizer_icons by which user can marge extra icons class.
+
+== Screenshots ==
+
+1. This screenshot one.
+2. This screenshot two.
+3. This screenshot three.
+4. This screenshot four.

@@ -16,21 +16,21 @@ if (!defined('ABSPATH')) {
 if (!defined('WPCI_PATH')) {
 	define('WPCI_PATH', plugin_dir_path(__FILE__));
 }
-if (!function_exists('WPCI_get_plugin_path')) {
-	function WPCI_get_plugin_path($file) {
+if (!function_exists('wpci_get_plugin_path')) {
+	function wpci_get_plugin_path($file) {
 		return WPCI_PATH . $file;
 	}
 }
-if (!function_exists('WPCI_plugin_url')) {
-	function WPCI_plugin_url($url) {
+if (!function_exists('wpci_plugin_url')) {
+	function wpci_plugin_url($url) {
 		return plugins_url($url, __FILE__);
 	}
 }
 
 
-add_action('plugins_loaded', 'WPCI_customizer_icon');
-if (!function_exists('WPCI_customizer_icon') ) {
-	function WPCI_customizer_icon() {
+add_action('plugins_loaded', 'wpci_customizer_icon');
+if (!function_exists('wpci_customizer_icon') ) {
+	function wpci_customizer_icon() {
 
 		/**
 		 * Text Domain Register.
@@ -43,8 +43,8 @@ if (!function_exists('WPCI_customizer_icon') ) {
 		require_once(plugin_dir_path(__FILE__).'inc/enqueue_scripts.php');
 		require_once(plugin_dir_path(__FILE__).'inc/css_class_of_icon.php');
 
-		add_action('customize_register', 'WPCI_customizer_icon_control');
-		function WPCI_customizer_icon_control() {
+		add_action('customize_register', 'wpci_customizer_icon_control');
+		function wpci_customizer_icon_control() {
 			/**
 			 * Add require files.
 			 */

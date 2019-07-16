@@ -19,7 +19,7 @@ class WPCI_Enqueue_Scripts {
 		/**
 		 * Load All Stylesheet
 		 */
-		wp_enqueue_style('materialdesignicons', WPCI_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
+		wp_enqueue_style('materialdesignicons', wpci_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
 
 	}
 
@@ -30,13 +30,13 @@ class WPCI_Enqueue_Scripts {
 		/**
 		 * Load All Stylesheet
 		 */
-		wp_enqueue_style('materialdesignicons', WPCI_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
-		wp_enqueue_style('wp-customizer-icon-control', WPCI_plugin_url('/assets/css/wp-customizer-icon-control.css'), array(), null);
+		wp_enqueue_style('materialdesignicons', wpci_plugin_url('/assets/css/materialdesignicons.min.css'), array(), null);
+		wp_enqueue_style('wp-customizer-icon-control', wpci_plugin_url('/assets/css/wp-customizer-icon-control.css'), array(), null);
 
 		/**
 		 * Load All jQuery Library
 		 */
-		wp_enqueue_script('customizer-icon-control', WPCI_plugin_url('/assets/js/wp-customizer-icon-control.js'), array('jquery'), '', true);
+		wp_enqueue_script('customizer-icon-control', wpci_plugin_url('/assets/js/wp-customizer-icon-control.js'), array('jquery'), '', true);
 
 	}
 

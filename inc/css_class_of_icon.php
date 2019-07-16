@@ -1,5 +1,5 @@
 <?php
-function WPCI_icon_css_class(){
+function wpci_icon_css_class(){
 	
 	return array(
 		'mdi mdi-access-point',

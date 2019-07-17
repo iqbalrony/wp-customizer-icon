@@ -2,8 +2,8 @@
 Contributors: iqbalrony
 Tags: wp,wp-icon,icon,customizer,customizer-icon,wp-customizer-icon,wp-icon,wp-customizer-icons
 Requires at least: 4.5
-Tested up to: 5.2.0
-Stable tag: 1.0.0
+Tested up to: 5.2.2
+Stable tag: 1.0.01
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 

@@ -1,10 +1,19 @@
 /*=================================================
             Icon Control
 =================================================*/
-.icon_options input {
+.wpci_icon_area input {
 	background-color: #fff;
 }
-.icon_options ul.customizer_icon{
+.wpci_icon_area input.wpci_icon_cls_input {
+    font-size: 16px;
+    line-height: 16px;
+}
+.wpci_icon_area ul.customizer_icon_library input.filter {
+	font-size: 16px;
+    line-height: 16px;
+    width: 100%;
+}
+.wpci_icon_area ul.customizer_icon_library{
 	list-style: none;
 	background: #fff;
 	border: 1px solid #ddd;
@@ -15,10 +24,10 @@
 	cursor: default;
 	display: none;
 }
-.icon_options ul.customizer_icon li {
+.wpci_icon_area ul.customizer_icon_library li {
 	display: inline-block;
 	padding: 3px;
-	margin: 3px;
-	cursor: pointer;
-	font-size: 16px;
+	margin: 4px;
+    cursor: pointer;
+    font-size: 24px;
 }

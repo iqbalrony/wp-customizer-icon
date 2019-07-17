@@ -6,15 +6,15 @@
 		/**
 		 * Script for icon option
 		 */
-		$('.icon_options').each(function () {
-			var icon_options = $(this);
-			var icon_input = icon_options.find('input.cls_input');
-			var icon_filter = icon_options.find('input.filter');
-			var icon_wrap = icon_options.find('.customizer_icon');
-			var icon = icon_wrap.find('i');
+		$('.wpci_icon_area').each(function () {
+			var wpci_icon_area = $(this);
+			var icon_input = wpci_icon_area.find('input.wpci_icon_cls_input');
+			var icon_filter = wpci_icon_area.find('input.filter');
+			var icon_library = wpci_icon_area.find('.customizer_icon_library');
+			var icon = icon_library.find('i');
 			//click on input show icon area
 			icon_input.on('click', function () {
-				icon_wrap.slideToggle("fast");
+				icon_library.slideToggle("fast");
 			});
 			//type on input search icon item in icon area
 			icon_filter.on("keyup", function() {
@@ -27,7 +27,7 @@
 			icon.on('click', function () {
 				icon_input.val($(this).attr('class')).change();
 				setTimeout(function () {
-					icon_wrap.slideUp("fast");
+					icon_library.slideUp("fast");
 				}, 310)
 			});
 		});

@@ -24,10 +24,10 @@ class WPCI_Customize_Icon_Control extends WP_Customize_Control {
 			<label>
 				<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
 				<div class="description customize-control-description"><?php echo esc_html($this->description); ?></div>
-				<div class="icon_options">
-					<input type="text" class="cls_input" id="icon_option_<?php echo $this->id; ?>" <?php $this->link(); ?>
+				<div class="wpci_icon_area">
+					<input type="text" class="wpci_icon_cls_input" id="icon_option_<?php echo $this->id; ?>" <?php $this->link(); ?>
 					       value="<?php echo esc_attr($this->value()); ?>"/>
-					<ul class="customizer_icon">
+					<ul class="customizer_icon_library">
 						<input type="text" class="filter" value="" placeholder="Search icon"/>
 						<?php
 						$this->icon_array = apply_filters('WPCI_customizer_icons',wpci_icon_css_class());

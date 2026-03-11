@@ -7,7 +7,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Requires PHP: 5.6
 Requires at least: 4.5
 Tested up to: 6.9
-Stable tag: trunk
+Stable tag: 1.0.4
 Tags: Customizer Icon, Icon, Customizer, Customizer Icon Control
 
 Custom Customizer icon control for wordpress customizer. It contains 3696 material design icons.

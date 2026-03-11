@@ -6,6 +6,8 @@ Description: Wp Customizer Icon plugin only for WordPress theme.
 Author: IqbalRony
 Version: 1.0.4
 Text Domain: wp-customizer-icon
+License: GPLv2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
 */
 
 // Exit if accessed directly
@@ -15,6 +17,10 @@ if (!defined('ABSPATH')) {
 
 if (!defined('WPCI_PATH')) {
 	define('WPCI_PATH', plugin_dir_path(__FILE__));
+}
+
+if (!defined('WPCI__VERSION')) {
+	define('WPCI__VERSION', '1.0.4');
 }
 if (!function_exists('wpci_get_plugin_path')) {
 	function wpci_get_plugin_path($file) {

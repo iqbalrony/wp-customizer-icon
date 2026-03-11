@@ -1,6 +1,7 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit;
 function wpci_icon_css_class(){
-	
+
 	return array(
 		'mdi mdi-access-point',
 		'mdi mdi-access-point-network',

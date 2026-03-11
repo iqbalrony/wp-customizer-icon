@@ -1,4 +1,5 @@
 <?php
+if ( ! defined( 'ABSPATH' ) ) exit;
 class WPCI_Customize_Icon_Control extends WP_Customize_Control {
 
 		/**
@@ -25,7 +26,7 @@ class WPCI_Customize_Icon_Control extends WP_Customize_Control {
 				<span class="customize-control-title"><?php echo esc_html($this->label); ?></span>
 				<div class="description customize-control-description"><?php echo esc_html($this->description); ?></div>
 				<div class="wpci_icon_area">
-					<input type="text" class="wpci_icon_cls_input" id="icon_option_<?php echo $this->id; ?>" <?php $this->link(); ?>
+					<input type="text" class="wpci_icon_cls_input" id="icon_option_<?php echo esc_attr($this->id); ?>" <?php $this->link(); ?>
 					       value="<?php echo esc_attr($this->value()); ?>"/>
 					<ul class="customizer_icon_library">
 						<input type="text" class="filter" value="" placeholder="Search icon"/>
@@ -33,7 +34,7 @@ class WPCI_Customize_Icon_Control extends WP_Customize_Control {
 						$this->icon_array = apply_filters('WPCI_customizer_icons',wpci_icon_css_class());
 						$show_choices = $this->icon_array;
 						foreach ($show_choices as $key => $value) {
-							echo '<li><i class="'.$value.'"></i></li>';
+							echo '<li><i class="'.esc_attr($value).'"></i></li>';
 						}
 						?>
 					</ul>
